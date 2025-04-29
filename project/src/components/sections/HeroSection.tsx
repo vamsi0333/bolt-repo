@@ -73,7 +73,6 @@ const HeroSection: React.FC = () => {
             </motion.div>
           </button>
         </motion.div>
-      </div>
     </section>
   );
 };
