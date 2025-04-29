@@ -67,7 +67,7 @@ const AboutSection: React.FC = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <div className="flex items-center text-gray-700 dark:text-gray-300">
                 <Calendar size={18} className="mr-2 text-blue-600" />
-                <span>5+ years of experience</span>
+                <span>2+ years of experience</span>
               </div>
               <div className="flex items-center text-gray-700 dark:text-gray-300">
                 <MapPin size={18} className="mr-2 text-blue-600" />
