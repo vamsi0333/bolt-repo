@@ -22,7 +22,6 @@ const HeroSection: React.FC = () => {
 
       {/* Main content */}
       <div className="container mx-auto px-4 py-16 z-10 text-center">
-        {/* Profile Image + Title */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -42,7 +41,6 @@ const HeroSection: React.FC = () => {
           </h2>
         </motion.div>
 
-        {/* 3D Cube */}
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -52,7 +50,6 @@ const HeroSection: React.FC = () => {
           <CubeScene />
         </motion.div>
 
-        {/* Description + Scroll Button */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -66,6 +63,7 @@ const HeroSection: React.FC = () => {
           <button
             onClick={scrollToAbout}
             className="flex items-center mx-auto text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
+          >
             <span className="mr-2">Learn more</span>
             <motion.div
               animate={{ y: [0, 5, 0] }}
@@ -75,8 +73,10 @@ const HeroSection: React.FC = () => {
             </motion.div>
           </button>
         </motion.div>
+      </div>
     </section>
   );
 };
 
 export default HeroSection;
+
