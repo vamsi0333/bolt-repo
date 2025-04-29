@@ -30,7 +30,7 @@ const HeroSection: React.FC = () => {
             Vamsi Krishna Bhavana
           </h1>
           <h2 className="text-xl md:text-2xl text-blue-600 dark:text-blue-400 font-medium">
-            DevOps Engineer & Cloud Infrastructure Specialist
+            DevOps Engineer | AWS & Kubernetes Specialist
           </h2>
         </motion.div>
         
@@ -50,7 +50,7 @@ const HeroSection: React.FC = () => {
           className="mt-12"
         >
           <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 max-w-2xl mx-auto mb-8">
-            Transforming infrastructure into code, automating deployments, and building resilient cloud solutions.
+            Automating cloud infrastructure, streamlining DevOps pipelines, and delivering high-availability solutions at scale.
           </p>
           
           <button
