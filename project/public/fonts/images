@@ -1,5 +1,5 @@
-public/
-  fonts/
-    Inter_Bold.json
-  images/
-    profile.jpeg   <-- (your uploaded profile picture should go here)
+<img
+  src="/images/profile.jpeg"
+  alt="Vamsi Krishna Bhavana"
+  className="w-32 h-32 rounded-full mx-auto mb-4 border-4 border-blue-500 shadow-lg"
+/>
