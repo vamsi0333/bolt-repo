@@ -1,82 +1,41 @@
 import React from 'react';
-import { motion } from 'framer-motion';
-import * as LucideIcons from 'lucide-react';
-import SectionHeading from '../ui/SectionHeading';
-import { socials } from '../../data/portfolio';
 
-const ContactSection: React.FC = () => {
+function ContactSection() {
   return (
-    <section id="contact" className="py-20 bg-white dark:bg-gray-900">
-      <div className="container mx-auto px-4">
-        <SectionHeading 
-          title="Get In Touch" 
-          subtitle="Feel free to contact me for any opportunities or collaborations"
-          centered
-        />
-        
-        <div className="max-w-3xl mx-auto bg-gray-50 dark:bg-gray-800 rounded-xl shadow-md overflow-hidden">
-          <div className="p-8">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="text-center mb-8"
-            >
-              <p className="text-lg text-gray-700 dark:text-gray-300">
-                I'm currently open to new opportunities in DevOps engineering and cloud infrastructure roles. 
-                Whether you have a question or just want to say hi, I'll try my best to get back to you!
-              </p>
-            </motion.div>
-            
-            <div className="flex justify-center space-x-6">
-              {socials.map((social, index) => {
-                // Get the icon from Lucide
-                const Icon = (LucideIcons as Record<string, React.ComponentType<any>>)[social.icon] || LucideIcons.Link;
-                
-                return (
-                  <motion.a
-                    key={social.platform}
-                    href={social.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group flex flex-col items-center"
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: index * 0.1 }}
-                    whileHover={{ scale: 1.1 }}
-                  >
-                    <div className="w-14 h-14 bg-white dark:bg-gray-700 rounded-full flex items-center justify-center shadow-md group-hover:bg-blue-600 dark:group-hover:bg-blue-600 transition-colors duration-300">
-                      <Icon className="text-blue-600 dark:text-blue-400 group-hover:text-white transition-colors duration-300" size={24} />
-                    </div>
-                    <span className="mt-2 text-sm text-gray-700 dark:text-gray-300">
-                      {social.platform}
-                    </span>
-                  </motion.a>
-                );
-              })}
-            </div>
-            
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-              className="mt-10 text-center"
-            >
-              <a 
-                href="mailto:vamsi.bhavana@example.com"
-                className="inline-block px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors"
-              >
-                Send Me an Email
-              </a>
-            </motion.div>
+    <section id="contact" className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-100 dark:bg-gray-800">
+      <div className="max-w-3xl mx-auto text-center">
+        <h2 className="text-3xl font-extrabold text-gray-900 dark:text-white">Get in Touch</h2>
+        <p className="mt-4 text-lg text-gray-600 dark:text-gray-300">
+          Feel free to reach out to me through any of the platforms below!
+        </p>
+
+        <div className="mt-8 space-y-4">
+          <p className="text-gray-700 dark:text-gray-400">
+            📧 Email: 
+            <a href="mailto:durga1481@gmail.com" className="text-blue-500 hover:underline ml-2">
+              durga1481@gmail.com
+            </a>
+            <br />
+            📧 Alternate Email: 
+            <a href="mailto:vamsikrishnabhavana8@gmail.com" className="text-blue-500 hover:underline ml-2">
+              vamsikrishnabhavana8@gmail.com
+            </a>
+          </p>
+          <p className="text-gray-700 dark:text-gray-400">
+            📱 Mobile: 551-998-8446
+          </p>
+          <div className="flex justify-center space-x-6 mt-6">
+            <a href="https://github.com/vamsi0333" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-300 hover:text-blue-500">
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/vamsikrishnabhavana" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-300 hover:text-blue-500">
+              LinkedIn
+            </a>
           </div>
         </div>
       </div>
     </section>
   );
-};
+}
 
 export default ContactSection;
