@@ -60,7 +60,7 @@ const HeroSection: React.FC = () => {
             Automating cloud infrastructure, streamlining DevOps pipelines, and delivering high-availability solutions at scale.
           </p>
 
-          <button
+                   <button
             onClick={scrollToAbout}
             className="flex items-center mx-auto text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
           >
@@ -73,6 +73,7 @@ const HeroSection: React.FC = () => {
             </motion.div>
           </button>
         </motion.div>
+      </div>
     </section>
   );
 };
