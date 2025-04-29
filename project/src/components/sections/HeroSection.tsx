@@ -66,7 +66,6 @@ const HeroSection: React.FC = () => {
           <button
             onClick={scrollToAbout}
             className="flex items-center mx-auto text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
-          >
             <span className="mr-2">Learn more</span>
             <motion.div
               animate={{ y: [0, 5, 0] }}
